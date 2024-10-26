@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include rumble_papers *.css
+recursive-include rumble_papers *.csv
+recursive-include rumble_papers *.html
+recursive-include rumble_papers *.ico
+recursive-include rumble_papers *.js
+recursive-include rumble_papers *.json
+recursive-include rumble_papers *.md
+recursive-include rumble_papers *.png
+recursive-include rumble_papers *.py
+recursive-include rumble_papers *.svg
+recursive-include rumble_papers *.txt
+recursive-exclude rumble_papers *.pyc

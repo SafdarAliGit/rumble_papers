@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:id",
+ "creation": "2022-01-02 16:26:00.933530",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "pdf_type",
+  "pdf_name",
+  "season",
+  "google_drive_link",
+  "link_for_app"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "pdf_type",
+   "fieldtype": "Select",
+   "label": "PDF Type",
+   "options": "Question Paper\nMarking Scheme\nExaminer Report\nGrade Thershold"
+  },
+  {
+   "fieldname": "pdf_name",
+   "fieldtype": "Data",
+   "label": "PDF Name"
+  },
+  {
+   "fieldname": "google_drive_link",
+   "fieldtype": "Data",
+   "label": "Google Drive Link"
+  },
+  {
+   "fieldname": "link_for_app",
+   "fieldtype": "Data",
+   "label": "Link for App"
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Data",
+   "label": "Season"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-02-21 12:35:22.215159",
+ "modified_by": "Administrator",
+ "module": "Rumble Papers",
+ "name": "Upload",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

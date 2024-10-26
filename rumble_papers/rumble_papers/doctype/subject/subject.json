@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:id",
+ "creation": "2022-01-02 16:24:11.352015",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "subject_name",
+  "board",
+  "board_name",
+  "level",
+  "level_name",
+  "uploads_section",
+  "uploads"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "subject_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "board",
+   "fieldtype": "Link",
+   "label": "Board",
+   "options": "Board"
+  },
+  {
+   "fetch_from": "board.board_name",
+   "fieldname": "board_name",
+   "fieldtype": "Data",
+   "label": "Board Name"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Link",
+   "label": "Level",
+   "options": "Level"
+  },
+  {
+   "fetch_from": "level.level_name",
+   "fieldname": "level_name",
+   "fieldtype": "Data",
+   "label": "Level Name"
+  },
+  {
+   "fieldname": "uploads_section",
+   "fieldtype": "Section Break",
+   "label": "Uploads"
+  },
+  {
+   "fieldname": "uploads",
+   "fieldtype": "Table",
+   "ignore_user_permissions": 1,
+   "label": "Uploads",
+   "options": "Subject Upload"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-26 15:56:22.752820",
+ "modified_by": "Administrator",
+ "module": "Rumble Papers",
+ "name": "Subject",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
